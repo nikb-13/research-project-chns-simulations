@@ -4,12 +4,10 @@ This repository contains a collection of Jupyter notebooks for implementing pseu
 
 The project is intended as a computational exploration of spectral differentiation, Fourier-based solvers, phase separation, droplet dynamics, energy behavior, and flow regimes in CHNS-type models.
 
----
 
 ## Repository Structure
 
 ```text
-.
 ├── Prerequisite notebooks/
 │   ├── Stage 0 - Basics.ipynb
 │   ├── Stage 01 - DFT.ipynb
@@ -49,7 +47,7 @@ The project is intended as a computational exploration of spectral differentiati
 └── README.md
 
 
-## Project Overview
+## **Project Overview**
 
 The main objective of this project is to implement and test numerical solvers for phase-field and fluid-flow models using pseudospectral and diffuse-domain approaches.
 
@@ -62,6 +60,6 @@ The repository is divided into three main parts:
 3. Final notebooks
     These contain the finalized numerical experiments used for studying phase separation, droplet deformation, energy evolution, Reynolds number effects, and laminar-to-turbulent behavior.
 
-## Requirements
+## **Requirements**
 
 To install the basic dependencies: pip install numpy scipy matplotlib jupyter ipykernel
