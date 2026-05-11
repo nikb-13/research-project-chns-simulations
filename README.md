@@ -1,14 +1,16 @@
 # Pseudospectral Method – Preliminary CHNS Solver
 
-This repository contains a collection of Jupyter notebooks for implementing pseudospectral methods, with a focus on the Cahn–Hilliard–Navier–Stokes (CHNS) system. The notebooks are organized into prerequisite material, preliminary experiments, and final experiments.
+This repository contains Jupyter notebooks for learning and experimenting with pseudospectral methods, with a focus on numerical solvers for Cahn–Hilliard–Navier–Stokes-type systems.
 
-The project is intended as a computational exploration of spectral differentiation, Fourier-based solvers, phase separation, droplet dynamics, energy behavior, and flow regimes in CHNS-type models.
+The notebooks are organized into prerequisite material, preliminary experiments, and final experiments.
 
+---
 
 ## Repository Structure
 
 ```text
-├── Prerequisite notebooks/
+.
+├── Prerequisite notebooks
 │   ├── Stage 0 - Basics.ipynb
 │   ├── Stage 01 - DFT.ipynb
 │   ├── Stage 02 - Spectral Differentiation in 1D.ipynb
@@ -16,9 +18,9 @@ The project is intended as a computational exploration of spectral differentiati
 │   ├── Stage 04 - Nonlinear.ipynb
 │   └── Stage 05 - 2D.ipynb
 │
-├── CHNS solver/
-│   ├── Experiments/
-│   │   ├── Results/
+├── CHNS solver
+│   ├── Experiments
+│   │   ├── Results
 │   │   ├── CHNS_DD_CH_test.ipynb
 │   │   ├── CHNS_DD_Non_linear_test.ipynb
 │   │   ├── CHNS_DD_Taylor_Green.ipynb
@@ -30,8 +32,8 @@ The project is intended as a computational exploration of spectral differentiati
 │   │   ├── omega_with_contour.gif
 │   │   └── phi_animation_dd.gif
 │   │
-│   └── Final/
-│       ├── Results/
+│   └── Final
+│       ├── Results
 │       ├── CHNS_DD_CH_test_DR.ipynb
 │       ├── CHNS_DD_Deformation_experiment.ipynb
 │       ├── CHNS_DD_Energy_experiment.ipynb
@@ -45,21 +47,33 @@ The project is intended as a computational exploration of spectral differentiati
 │       └── one_way_omega_phi.gif
 │
 └── README.md
+```
 
+---
 
-## **Project Overview**
+## Project Overview
 
-The main objective of this project is to implement and test numerical solvers for phase-field and fluid-flow models using pseudospectral and diffuse-domain approaches.
+The main objective of this project is to implement and test numerical solvers for phase-field and fluid-flow models.
 
 The repository is divided into three main parts:
 
-1. Prerequisite notebooks
-    These notebooks introduce the numerical and mathematical tools needed for the CHNS solver.
-2. Experimental notebooks
-    These contain preliminary tests, validation experiments, and exploratory simulations.
-3. Final notebooks
-    These contain the finalized numerical experiments used for studying phase separation, droplet deformation, energy evolution, Reynolds number effects, and laminar-to-turbulent behavior.
+1. **Prerequisite notebooks**  
+   These notebooks introduce the numerical and mathematical tools needed for the CHNS solver.
 
-## **Requirements**
+2. **Experimental notebooks**  
+   These contain preliminary tests, validation experiments, and exploratory simulations.
 
-To install the basic dependencies: pip install numpy scipy matplotlib jupyter ipykernel
+3. **Final notebooks**  
+   These contain the finalized numerical experiments used for studying phase separation, droplet deformation, energy behaviour, Reynolds number effects, and laminar-to-turbulent flow behaviour.
+
+## Requirements
+
+The notebooks require a Python environment with common scientific-computing packages.
+
+Basic dependencies:
+
+```bash
+pip install numpy scipy matplotlib jupyter ipykernel
+```
+
+Additional packages may be required depending on the implementation inside individual notebooks.
