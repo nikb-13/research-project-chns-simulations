@@ -1,0 +1,46 @@
+{
+    "experiment_name": "Only_deformation_no_advection",
+    "created_at": "2026-04-28 12:43:26",
+    "domain": {
+        "dimension": 2,
+        "geometry": "periodic square domain",
+        "L_x": 6.283185307179586,
+        "L_y": 6.283185307179586,
+        "N_x": 256,
+        "N_y": 256,
+        "del_x": 0.02454369260617026,
+        "del_y": 0.02454369260617026,
+        "dx": 0.02454369260617026,
+        "grid_points": 65536
+    },
+    "physical_parameters": {
+        "epsilon": 0.07363107781851078,
+        "epsilon_definition": "epsilon = 3 * dx",
+        "nu": 0.04,
+        "alpha": 0.0,
+        "M": 0.0004,
+        "sigma": 1.5
+    },
+    "forcing": {
+        "type": "Kolmogorov-type forcing",
+        "reference": "Interface-induced turbulence in viscous binary fluid mixtures, Supplemental Material",
+        "f_0": 4.0,
+        "k_f": 3,
+        "definition": "f_w = f_0 * cos(k_f * Y)"
+    },
+    "time_stepping": {
+        "T": 8.0,
+        "N_t": 25000,
+        "delta_t": 0.00032,
+        "save_every": 100,
+        "number_of_saved_snapshots": 251
+    },
+    "initial_condition": {
+        "type": "single droplet",
+        "xc": 3.141592653589793,
+        "yc": 3.141592653589793,
+        "d0": 1.5079644737231006,
+        "d0_relative_to_Lx": 0.24,
+        "center_definition": "xc = L_x / 2, yc = L_y / 2"
+    }
+}
